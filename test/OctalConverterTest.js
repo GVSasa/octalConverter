@@ -8,7 +8,23 @@ describe('givenDecimal1WhenConvertThenOctal1', function () {
         var expectedResult = 1;
         // When
 
-        var actualResult = cctalConverterFunctions.convert(a);
+        var actualResult = OctalconverterFunctions.convert(a);
+
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+    })
+})
+
+
+describe('givenDecimal2WhenConvertThenOctal2', function () {
+    it('convert(2) = 2', function() {
+        //Given
+        var a = 2;
+        var expectedResult = 2;
+        // When
+
+        var actualResult = OctalconverterFunctions.convert(a);
 
 
         // Then
