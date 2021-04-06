@@ -64,3 +64,18 @@ describe('givenDecimal95WhenConvertThenOctal137', function () {
     })
 })
 
+
+describe('givenDecimal2048WhenConvertThenOctal4000', function () {
+    it('convert(2048) = 4000', function() {
+        //Given
+        var a = 2048;
+        var expectedResult = 4000;
+        // When
+
+        var actualResult = OctalconverterFunctions.convert(a);
+
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+    })
+})
